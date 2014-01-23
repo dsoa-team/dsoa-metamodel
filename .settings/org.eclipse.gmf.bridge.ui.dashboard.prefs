@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/DsoaAdsl/DsoaAdsl.genmodel
+gmf_dashboard/domainModel=platform\:/resource/DsoaAdsl/DsoaAdsl.ecore
+gmf_dashboard/generationModel=platform\:/resource/DsoaAdsl/DsoaAdsl.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/DsoaAdsl/DsoaAdsl.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/DsoaAdsl/DsoaAdsl.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/DsoaAdsl/DsoaAdsl.gmftool

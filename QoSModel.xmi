@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dsoa:QoSModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:dsoa="dsoaURI"
+    package="br.ufpe.cin.dsoa.qos.model"
+    name="DSOA QoS Model">
+  <elements
+      name="Performance"
+      description="Performance related QoS attributes">
+    <groups
+        name="ResponseTime"
+        description="Response time">
+      <isMeasuredBy
+          name="AvgResponseTime"
+          description="Average Response Time"/>
+    </groups>
+  </elements>
+</dsoa:QoSModel>

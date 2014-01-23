@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/DsoaAdsl/src" modelPluginID="DsoaAdsl" modelName="DsoaAdsl"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    containmentProxies="true" complianceLevel="6.0" copyrightFields="false" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>DsoaAdsl.ecore</foreignModel>
+  <genPackages prefix="DsoaAdsl" disposableProviderFactory="true" ecorePackage="DsoaAdsl.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="DsoaAdsl.ecore#//RelationalOperator">
+      <genEnumLiterals ecoreEnumLiteral="DsoaAdsl.ecore#//RelationalOperator/LT"/>
+      <genEnumLiterals ecoreEnumLiteral="DsoaAdsl.ecore#//RelationalOperator/LE"/>
+      <genEnumLiterals ecoreEnumLiteral="DsoaAdsl.ecore#//RelationalOperator/GT"/>
+      <genEnumLiterals ecoreEnumLiteral="DsoaAdsl.ecore#//RelationalOperator/GE"/>
+      <genEnumLiterals ecoreEnumLiteral="DsoaAdsl.ecore#//RelationalOperator/EQ"/>
+      <genEnumLiterals ecoreEnumLiteral="DsoaAdsl.ecore#//RelationalOperator/NE"/>
+    </genEnums>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//Component">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//Component/provides"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Component/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Component/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Component/className"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//Component/requires"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//ServiceSpecification">
+      <genFeatures notify="false" children="true" createChild="true" propertySortChoices="true"
+          ecoreFeature="ecore:EReference DsoaAdsl.ecore#//ServiceSpecification/defines"/>
+      <genFeatures notify="false" children="true" createChild="true" propertySortChoices="true"
+          ecoreFeature="ecore:EReference DsoaAdsl.ecore#//ServiceSpecification/realizes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//ServiceSpecification/name"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//ServiceInterface">
+      <genFeatures notify="false" children="true" createChild="true" propertyMultiLine="true"
+          propertySortChoices="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//ServiceInterface/has"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//ServiceInterface/className"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//NonFunctionalSpecification">
+      <genFeatures children="true" createChild="true" propertyMultiLine="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//NonFunctionalSpecification/specifies"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//QoSOffer"/>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//QoSRequest"/>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//Operation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Operation/name"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//Attributable"/>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//Constraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Constraint/expression"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Constraint/threshold"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Constraint/weight"/>
+      <genFeatures notify="false" children="true" createChild="true" propertySortChoices="true"
+          ecoreFeature="ecore:EReference DsoaAdsl.ecore#//Constraint/isRelatedTo"/>
+      <genFeatures notify="false" children="true" createChild="true" propertySortChoices="true"
+          ecoreFeature="ecore:EReference DsoaAdsl.ecore#//Constraint/constrains"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//Metric">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Metric/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Metric/description"/>
+      <genFeatures children="true" createChild="true" propertyMultiLine="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//Metric/metadata"/>
+      <genFeatures children="true" createChild="true" propertyMultiLine="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//Metric/data"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//QoSAttribute">
+      <genFeatures children="true" createChild="true" propertyMultiLine="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//QoSAttribute/isMeasuredBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//QoSAttribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//QoSAttribute/description"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//QoSCategory">
+      <genFeatures children="true" createChild="true" propertyMultiLine="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//QoSCategory/groups"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//QoSCategory/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//QoSCategory/description"/>
+      <genFeatures children="true" createChild="true" propertyMultiLine="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//QoSCategory/contains"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Property/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//Property/type"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//ServiceComponentModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//ServiceComponentModel/components"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//ServiceComponentModel/package"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//ServiceComponentModel/name"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//QoSModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//QoSModel/elements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//QoSModel/package"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//QoSModel/name"/>
+    </genClasses>
+    <genClasses ecoreClass="DsoaAdsl.ecore#//ServiceRegistry">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DsoaAdsl.ecore#//ServiceRegistry/registers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DsoaAdsl.ecore#//ServiceRegistry/uri"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
